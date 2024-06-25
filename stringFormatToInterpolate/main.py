@@ -14,7 +14,7 @@ rep = {
 }
 
 out = ""
-with open("in.txt", "r") as f:
+with open("stringFormatToInterpolate/in.txt", "r") as f:
   inp = f.readlines()
   x = ""
   for i in range(len(inp)):
@@ -44,5 +44,5 @@ for i in rep:
   out2 = out2.replace(i + ".Schema", rep[i]);
   out2 = out2.replace(i, rep[i]);
 
-with open("out.txt", "w") as f:
+with open("stringFormatToInterpolate/out.txt", "w") as f:
   f.write(out2)
